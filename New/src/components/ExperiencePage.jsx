@@ -171,7 +171,10 @@ const ExperiencePage = ({ title, subtitle, accent, sections = [] }) => {
                     </h2>
                     <p className="text-white/60 text-lg md:text-xl mb-12 italic">Food Bridge — {title.includes('Home') ? 'where tradition meets precision.' : 'our journey of craft.'}</p>
                     <div className="flex items-center justify-center space-x-8 pointer-events-auto">
-                        <button className="bg-white text-black px-10 py-4 rounded-sm font-medium hover:bg-white/90 transition-colors">
+                        <button
+                            onClick={onAskDoubt}
+                            className="bg-white text-black px-10 py-4 rounded-sm font-medium hover:bg-white/90 transition-colors"
+                        >
                             Ask a Doubt
                         </button>
                         <a href="#" className="text-white/70 hover:text-white transition-colors border-b border-white/20 pb-1">
